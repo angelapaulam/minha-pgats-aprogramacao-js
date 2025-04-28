@@ -1,3 +1,6 @@
 const turma=02
-console.log(turma) teste alteração de hoje
+console.log(turma) 
+console.log("teste alteração de hoje")
+
+
 
