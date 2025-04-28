@@ -1,5 +1,5 @@
 /**
- * Console API
+ * Console API - teste
  */
 
 console.log("Aula inicial JS")
