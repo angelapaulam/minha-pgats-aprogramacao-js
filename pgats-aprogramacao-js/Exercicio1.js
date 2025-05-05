@@ -4,9 +4,9 @@ let idade = 16, peso = 7, adotado = "Sim"
 let nameUpperCase = nome.toUpperCase()
 let racaFirstLetter  = raca.charAt(0).toUpperCase() + raca.slice(1).toLowerCase()
 
-const animal = ["nome:", nameUpperCase, peso, "raca:", racaFirstLetter]
+const animal = [{nome: nameUpperCase, peso, raca: racaFirstLetter}]
 
-console.log(animal)localStorage;
+console.log(animal)
 
 
 
