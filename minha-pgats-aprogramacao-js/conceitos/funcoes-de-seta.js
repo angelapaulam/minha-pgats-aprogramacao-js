@@ -50,6 +50,7 @@ const listarNomesDeDogs = () => {
 
 // arrow function sem bloco + com return 'automatico'
 const dobrar = (numero) => numero * 2
+const saudacoes = (nome) => `Olá, ${nome}!`
 
 exibirNomeDoDog("Pipoca")
 exibirPorteDoDog()
@@ -63,3 +64,22 @@ console.log(`--------`)
 listarNomesDeDogs()
 
 const nomesDeDogs = listarNomesDeDogs()
+
+// 
+
+// function filtrarNumeros(lista) {
+//   return lista.filter(item => typeof item === 'number');
+// }
+
+
+// Mocha 
+teste ('nome do teste', { tags: 'critico' }, function () {
+  // implementacao do teste
+})
+
+
+
+/**
+ * Gere 5 perguntas (sem a resposta) sobre tema xpto; avalie minhas respostas como correta ou errada e me explique o porque da resposta correta.
+ * 
+ */
