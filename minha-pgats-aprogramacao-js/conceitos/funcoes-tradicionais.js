@@ -1,62 +1,59 @@
 // funcao nomeada, com parametro, sem retorno
 function exibirNomeDoDog(nome) {
-  console.log(nome)
+  console.log(nome);
 }
 
 // funcao nomeada, com parametro + valor default, sem retorno
-function exibirPorteDoDog(porte = 'ND') {
-  console.log(porte)
+function exibirPorteDoDog(porte = "ND") {
+  console.log(porte);
 }
 
 // funcao nomeada, com parametro, com retorno
 function obterNomeDoDogFormatado(nome) {
-  return nome.toUpperCase()
+  return nome.toUpperCase();
 }
 
 function obterObjetoDog() {
   return {
-    nome: 'Bailey Maria',
+    nome: "Bailey Maria",
     peso: 11.5,
     dogIrmao: {
-      nome: 'Billy'
+      nome: "Billy",
     },
-    adotado: true
-  }
+    adotado: true,
+  };
 }
 
 function listarObjetosDog() {
-  return [{
-    nome: 'Bailey Maria',
-    peso: 11.5
-  }, {
-    nome: 'Bailey Maria',
-    peso: 11.5
-  }]
+  return [
+    {
+      nome: "Bailey Maria",
+      peso: 11.5,
+    },
+    {
+      nome: "Bailey Maria",
+      peso: 11.5,
+    },
+  ];
 }
 
 function listarNomesDeDogs() {
-  const nomes = [
-    'Pituca',
-    'Marea',
-    'Anderson'
-  ]
-  
-  console.log(`Passou pela função listarNomesDeDogs`)
+  const nomes = ["Pituca", "Marea", "Anderson"];
 
-  return nomes
+  console.log(`Passou pela função listarNomesDeDogs`);
+
+  return nomes;
 }
 
+exibirNomeDoDog("Pipoca");
+exibirPorteDoDog();
+console.log(obterNomeDoDogFormatado("Bailey Maria"));
+console.log(obterObjetoDog());
+console.log(listarObjetosDog());
+console.log(listarNomesDeDogs());
 
-exibirNomeDoDog("Pipoca")
-exibirPorteDoDog()
-console.log(obterNomeDoDogFormatado("Bailey Maria"))
-console.log(obterObjetoDog())
-console.log(listarObjetosDog())
-console.log(listarNomesDeDogs())
+console.log(`--------`);
 
-console.log(`--------`)
+listarNomesDeDogs();
 
-listarNomesDeDogs()
-
-const nomesDeDogs = listarNomesDeDogs()
-
+const nomesDeDogs = listarNomesDeDogs();

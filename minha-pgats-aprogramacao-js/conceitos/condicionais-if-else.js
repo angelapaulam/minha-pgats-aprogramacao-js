@@ -9,18 +9,18 @@
  */
 
 if (10 < 5) {
-  console.log(`valor é maior`)
+  console.log(`valor é maior`);
 } else {
-  console.log(`valor é menor`)
+  console.log(`valor é menor`);
 }
 
-const idade = 3
-const porte = 'P'
+const idade = 3;
+const porte = "P";
 
 if (idade >= 2) {
-  console.log(`Pode ser adotado, pela idade`)
-} else if (porte === 'P') {
-  console.log(`Pode ser adotado, pelo porte`)
+  console.log(`Pode ser adotado, pela idade`);
+} else if (porte === "P") {
+  console.log(`Pode ser adotado, pelo porte`);
 } else {
-  console.log(`Não pode ser adotado`)
+  console.log(`Não pode ser adotado`);
 }

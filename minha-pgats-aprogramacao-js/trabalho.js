@@ -1,58 +1,45 @@
-function geradorDeTagsDeIdentificacao (nome) {
-  return nome.toUpperCase()
+function geradorDeTagsDeIdentificacao(nome) {
+  return nome.toUpperCase();
 }
 
-export {
-  geradorDeTagsDeIdentificacao
-}
+export { geradorDeTagsDeIdentificacao };
 
-function verificarSePodeSerAdotado (idade, porte) {
-  if (idade === 1 && porte === 'M') {
+function verificarSePodeSerAdotado(idade, porte) {
+  if (idade === 1 && porte === "M") {
     return true;
   }
   return false;
 }
-  
-export {
-  verificarSePodeSerAdotado
-} 
 
-function calcularConsumoDeRacao (nome, idade, peso) {
+export { verificarSePodeSerAdotado };
+
+function calcularConsumoDeRacao(nome, idade, peso) {
   const consumoPorQuilo = 300;
-  const consumoDiario = Math.floor(peso * consumoPorQuilo)
-  return consumoDiario
+  const consumoDiario = Math.floor(peso * consumoPorQuilo);
+  return consumoDiario;
 }
 
-export {
-  calcularConsumoDeRacao
-} 
+export { calcularConsumoDeRacao };
 
 function decidirTipoDeAtividadePorPorte(porte) {
   switch (porte) {
-    case 'pequeno':
-      return 'brincar dentro de casa';
-    case 'médio':
-      return 'passeios moderados no bairro';
-    case 'grande':
-      return 'corridas e exercícios ao ar livre';
+    case "pequeno":
+      return "brincar dentro de casa";
+    case "médio":
+      return "passeios moderados no bairro";
+    case "grande":
+      return "corridas e exercícios ao ar livre";
     default:
-      return 'porte não identificado';
+      return "porte não identificado";
   }
 }
 
-export {
-  decidirTipoDeAtividadePorPorte
-}
+export { decidirTipoDeAtividadePorPorte };
 
 async function buscarDadoAsync() {
-  await new Promise(resolve => setTimeout(resolve, 1000)); 
-  const nome = 'Pipoca'
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  const nome = "Pipoca";
   return nome;
 }
 
-export {
-  buscarDadoAsync
-}
-
-
-
+export { buscarDadoAsync };

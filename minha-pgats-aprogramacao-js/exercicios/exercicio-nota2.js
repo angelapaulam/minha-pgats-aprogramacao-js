@@ -3,7 +3,7 @@ Retorne o número de vogais no texto fornecido. Consideraremos a, e, i, o e u co
  */
 
 function contarVogais(texto) {
-  const vogais = 'aeiou';
+  const vogais = "aeiou";
   let contador = 0;
 
   for (let letra of texto) {
@@ -13,15 +13,18 @@ function contarVogais(texto) {
   return contador;
 }
 
-console.log(contarVogais('exercicio dois valendo nota na disciplina programacao para automacao de teste')); 
+console.log(
+  contarVogais(
+    "exercicio dois valendo nota na disciplina programacao para automacao de teste",
+  ),
+);
 // Saída: 6
 
-console.log(contarVogais('bom dia')); 
+console.log(contarVogais("bom dia"));
 // Saída: 3
 
-console.log(contarVogais(' ')); 
+console.log(contarVogais(" "));
 // Saída: 0
 
-console.log(contarVogais('javascript')); 
+console.log(contarVogais("javascript"));
 // Saída: 3
-

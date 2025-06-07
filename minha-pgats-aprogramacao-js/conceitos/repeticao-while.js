@@ -7,17 +7,17 @@
  * 
  */
 
-  let voltasAteFicarCansado = 5
-  let quantidadeVoltasAtual = 0
+let voltasAteFicarCansado = 5;
+let quantidadeVoltasAtual = 0;
 
-  while (quantidadeVoltasAtual < voltasAteFicarCansado) {
-    console.log(`Dar uma volta na quadra`)
+while (quantidadeVoltasAtual < voltasAteFicarCansado) {
+  console.log(`Dar uma volta na quadra`);
 
-    quantidadeVoltasAtual++
-  } 
+  quantidadeVoltasAtual++;
+}
 
-  // execucao do código - 
-  // over engineering - 
+// execucao do código -
+// over engineering -
 
 // boilerplate
 // templates

@@ -1,7 +1,5 @@
-function exibirNomeDogFormatado (nome) {
-  return nome.toUpperCase()
+function exibirNomeDogFormatado(nome) {
+  return nome.toUpperCase();
 }
 
-export {
-  exibirNomeDogFormatado
-}
+export { exibirNomeDogFormatado };

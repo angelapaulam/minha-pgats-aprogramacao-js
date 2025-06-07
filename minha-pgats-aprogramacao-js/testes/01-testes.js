@@ -15,22 +15,19 @@
 
  */
 
-import { exibirNomeDogFormatado } from '../conceitos/testes-de-unidade.js'
-import assert from 'node:assert'
+import { exibirNomeDogFormatado } from "../conceitos/testes-de-unidade.js";
+import assert from "node:assert";
 
-describe('Testes do Projeto', () => {
+describe("Testes do Projeto", () => {
   it(`deve exibir o nome do dog com letras maiúsculas`, () => {
-    assert.strictEqual(exibirNomeDogFormatado('Mimosa'), 'MIMOSA')
-    
+    assert.strictEqual(exibirNomeDogFormatado("Mimosa"), "MIMOSA");
+
     // verifique se: <valor atual> É IGUAL A <valor esperado>
-  })
+  });
 
-  it('primeiro teste', () => {
+  it("primeiro teste", () => {});
 
-  })
-
-  it('segundo teste', () => {
-    throw new Error()
-  })
-
-})
+  it("segundo teste", () => {
+    throw new Error();
+  });
+});

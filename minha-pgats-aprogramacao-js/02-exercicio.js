@@ -24,11 +24,11 @@ Exemplos:
 
 // const nomeDog = "tH   oR@!%  "
 // const nomeDog = '   Ba!ley Mari@    '
-const nomeDog = 'Doguinho123'
+const nomeDog = "Doguinho123";
 
-let nomeFormatado = nomeDog.trim()
-nomeFormatado = removerCaracteresEspeciais(nomeFormatado)
-nomeFormatado = tornarAPrimeiraLetraMaiuscula(nomeFormatado)
+let nomeFormatado = nomeDog.trim();
+nomeFormatado = removerCaracteresEspeciais(nomeFormatado);
+nomeFormatado = tornarAPrimeiraLetraMaiuscula(nomeFormatado);
 
 // const palavras = nomeFormatado.split(/\s+/);
 // const palavras = nomeFormatado.split(" ");
@@ -49,13 +49,11 @@ nomeFormatado = tornarAPrimeiraLetraMaiuscula(nomeFormatado)
 
 */
 
-const valido = verificarSeONomeEValido(nomeFormatado)
+const valido = verificarSeONomeEValido(nomeFormatado);
 
-console.log(nomeDog)
-console.log(nomeFormatado)
-console.log(valido)
-
-
+console.log(nomeDog);
+console.log(nomeFormatado);
+console.log(valido);
 
 function removerCaracteresEspeciais(nome) {
   // return nome.replace(/[^a-zA-ZÀ-ÿ]/g, "");
@@ -63,13 +61,15 @@ function removerCaracteresEspeciais(nome) {
 }
 
 function removerEspacosEntreAPalavra(nome) {
-  return nome.replace(/\s+/g, "")
+  return nome.replace(/\s+/g, "");
 }
 
 function tornarAPrimeiraLetraMaiuscula(nome) {
-  return nome.charAt(0).toUpperCase() + nome.slice(1, nome.length).toLowerCase()
+  return (
+    nome.charAt(0).toUpperCase() + nome.slice(1, nome.length).toLowerCase()
+  );
 }
 
-function verificarSeONomeEValido(nome) { 
-  return nome.split(" ").length === 1
+function verificarSeONomeEValido(nome) {
+  return nome.split(" ").length === 1;
 }

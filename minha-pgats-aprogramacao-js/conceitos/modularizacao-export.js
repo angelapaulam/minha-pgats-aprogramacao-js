@@ -17,29 +17,20 @@
 // const nomePet3 = `Pantera`
 // console.log(`O nome do pet é ${nomePet3}`)
 
-const BRINQUEDOS = [
-  'Osso',
-  'Peteca',
-  'Chocalho'
-]
+const BRINQUEDOS = ["Osso", "Peteca", "Chocalho"];
 
-function exibirNomePet(paramNomePet = 'valor padrao') {
-
+function exibirNomePet(paramNomePet = "valor padrao") {
   if (paramNomePet === undefined) {
-    console.log()
-    return
+    console.log();
+    return;
   }
 
-  console.log(`O nome do pet é ${paramNomePet}`)
+  console.log(`O nome do pet é ${paramNomePet}`);
 }
 
 function exibirIdade(paramIdadePet) {
-  console.log(`Idade do Pet é ${paramIdadePet}`)
+  console.log(`Idade do Pet é ${paramIdadePet}`);
 }
 
-//  export {} / import 
-export {
-  exibirNomePet,
-  exibirIdade,
-  BRINQUEDOS
-}
+//  export {} / import
+export { exibirNomePet, exibirIdade, BRINQUEDOS };
